@@ -3,8 +3,9 @@ using namespace std;
 
 int main()
 {
+    string name = "Lei Hua";
     cout << "Hello "
-         << "Lei, "
+         << name << ", "
          << "cout" << endl;
 
     cout << "I love C++ programming!" << endl;
