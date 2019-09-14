@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cmath>
 using namespace std;
 
 double power(double base, int exponent);
@@ -19,6 +18,11 @@ int main()
 
 double power(double base, int exponent)
 {
-    // return 0.0;
-    return pow(base, exponent);
+    double result = 1;
+    for (int i = 0; i < exponent; i++)
+    {
+        result *= base;
+    }
+
+    return result;
 }
