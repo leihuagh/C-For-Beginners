@@ -12,6 +12,8 @@ int main()
     cout << "What is the exponent?: ";
     cin >> exponent;
     print_power(base, exponent);
+    // print_power(100, 4);
+    // print_power(4, 2);
     return 0;
 }
 
