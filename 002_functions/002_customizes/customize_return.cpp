@@ -1,7 +1,6 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
-
-double power(double base, int exponent);
 
 int main()
 {
@@ -10,19 +9,7 @@ int main()
     cin >> base;
     cout << "What is the exponent?: ";
     cin >> exponent;
-    // double power = pow(base, exponent);
-    double powerResult = power(base, exponent);
-    cout << powerResult << endl;
+    double result = pow(base, exponent);
+    cout << result << endl;
     return 0;
-}
-
-double power(double base, int exponent)
-{
-    double result = 1;
-    for (int i = 0; i < exponent; i++)
-    {
-        result *= base;
-    }
-
-    return result;
 }
