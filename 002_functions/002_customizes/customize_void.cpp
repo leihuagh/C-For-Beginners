@@ -11,9 +11,9 @@ int main()
     cin >> base;
     cout << "What is the exponent?: ";
     cin >> exponent;
+    // double result = power(base, exponent);
+    // cout << result << endl;
     print_power(base, exponent);
-    // print_power(100, 4);
-    // print_power(4, 2);
     return 0;
 }
 
@@ -30,5 +30,5 @@ double power(double base, int exponent)
 void print_power(double base, int exponent)
 {
     double result = power(base, exponent);
-    cout << base << " raised to the " << exponent << " power is " << result << endl;
+    cout << "base: " << base << "\nexponent: " << exponent << "\nResult: " << result << endl;
 }
